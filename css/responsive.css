@@ -1,0 +1,159 @@
+@media  (max-width:768px) {
+    .navbar-desktop{
+        display: none;
+    }
+    .img-home{
+        display: none;
+    }
+
+    .initial-form{
+        width: 94%;  
+        top: 350px; 
+        /* display: none; */
+    }
+    
+    #nav-mobile{
+        display: block;
+    }
+
+
+    .bg__image-home{
+        background-image: url(../assets/img/background-hause-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -240px;
+        font-size: 20px;
+    }
+
+    .wave{
+        display: none;
+    }
+
+
+    .form-floating {
+        margin-top: 20px;
+    }
+
+
+    .description-poliza{
+        margin-top: 720px !important;
+        
+    }
+
+    .description-poliza h4{
+        text-align: center;
+    }
+
+    .description-poliza p{
+        text-align: justify;
+    }
+
+    .advantages-mobile{
+        display: block;
+    }
+
+    .advantages-desktop{
+        display: none;
+    }
+
+
+    .multisteps-form__progress-btn:before {
+        text-indent: 0;
+      }
+
+    .progressbar{
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+
+    .alert-document{
+        margin-top: 10px !important;
+    }
+
+
+    .personal-document{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .alert-valor{
+        border: none;
+    }
+
+
+    #icon-home-02{
+        display: none;
+    }
+
+
+    .card{
+        padding: 20px !important;
+    }
+
+
+    .medium-button{
+        width: 95%;
+    }
+
+
+    .question-section-mobile{
+        margin-top: 40px !important;
+    }
+
+
+    .card-name{
+        margin-bottom: 30px;
+    }
+
+
+    .container-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .btn_continue-mobile{
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+    }
+
+
+    
+
+
+    .canon-total-description{
+        font-size: 12px;
+    }
+
+
+    .button-small{
+        width: 110% !important;
+    }
+
+
+    .calculator-total{
+        display: none;
+    }
+
+    .calculator-total-mobile{
+        display: block;
+    }
+    
+    .alert-grid{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .buttons-optios-mobile{
+        flex-direction: column !important;
+    }
+
+    .buttons-optios-mobile button{
+        margin-bottom: 15px !important;
+    }
+
+
+}
