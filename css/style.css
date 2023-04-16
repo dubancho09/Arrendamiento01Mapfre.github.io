@@ -728,8 +728,26 @@ a{
 }
 
 
+.titile-description-pay{
+    font-size: 28px;
+    color: #737373;
+    font-weight: bold;
+}
 
 
+.card-items-pay{
+    width: 90%;
+    margin-left: 10px;
+}
+
+#pay-button {
+    color: #363636 !important;
+}
+
+.pay-description{
+    font-size: 18px;
+    color: #363636;
+}
 
 /*Estilos footer*/
 
