@@ -96,7 +96,7 @@ btn_calcular.addEventListener("click", () => {
 
 
         btn_continue.addEventListener('click', () =>{
-            window.location.href = "./datos_propiedad.html";
+            window.location.href = "./datos_inquilino.html";
         });
 
 

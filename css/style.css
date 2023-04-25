@@ -749,6 +749,18 @@ a{
     color: #363636;
 }
 
+.info_poliza{
+    font-size: 20px;
+}
+
+.descripcion_costos{
+    font-size: 24px;
+}
+
+.content-line{
+    border-bottom: solid 1px #363636;
+}
+
 /*Estilos footer*/
 
 .footer {

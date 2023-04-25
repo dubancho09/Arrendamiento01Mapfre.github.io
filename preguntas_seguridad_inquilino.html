@@ -309,7 +309,7 @@
     <!-- Boton Continuar -->
     <div class="d-flex justify-content-center mb-5">
         <button id="btn_continue" class="btn button-success medium-button" data-toggle="modal"
-            data-target="#datos_confirmados">Continuar</button>
+            data-target="#informacion_exitosa">Continuar</button>
     </div>
 
     
@@ -337,6 +337,31 @@
     </div>
     <!-- Fin Footer -->
 
+    <!-- Modal informacion exitosa -->
+    <div class="modal fade" id="informacion_exitosa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img class="icon-alert" src="./assets/icons/alert-success.svg">
+                <div class="d-flex justify-content-end mt-2 me-2">
+                    <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="container mt-5">
+                        <div class="text-center">
+                            <h5 class="text-title"><b>¡Hemos recibido tu información!</b></h5>
+                            <span class="card-description">Y tu firma digital; regresaremos con el propietario para continuar con el proceso y <b>posteriormente enviarte un correo con toda la información el contrato aprobado.</b>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Boton Aceptar -->
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="./datos_propiedad.html" class="btn button-success medium-button">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Datos confirmados Exito-->
     <div class="modal fade" id="datos_confirmados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

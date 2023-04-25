@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="row mt-5">
-                            <form id="form-data" class="row">
+                            <form id="form-data" autocomplete="off" class="row">
                                 <!-- Input Nombre -->
                                 <div class="col-md-4 ">
                                     <div class="form-group">
@@ -311,7 +311,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-between mt-4 mb-4">
-                            <button class="btn button-outline-success medium-button">Modificar</button>
+                            <button class="btn button-outline-success medium-button">Modificar</a>
                             <button id="btn__getInto" class="btn button-success ms-3 medium-button" data-toggle="modal"
                                 data-target="#modal__confirmation" data-dismiss="modal"
                                 aria-label="Close">Aceptar</button>
@@ -371,10 +371,12 @@
                             <div class="row justify-content-center mt-4">
                                 <div class="col-9">
                                     <div class="d-grid gap-2">
-                                        <button id="btn_continue"
-                                            class="btn button-success p-2 modal__form--button-continue" type="button"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#modal__confirmation">Continuar</button>
+                                        <button
+                                            class="btn button-success p-2" type="button"
+                                            data-toggle="modal"
+                                data-target="#datos_confirmados" data-dismiss="modal"
+                                aria-label="Close"
+                                            >Continuar</button>
                                     </div>
                                 </div>
                             </div>
@@ -387,6 +389,51 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal Datos confirmados Exito-->
+    <div class="modal fade" id="datos_confirmados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <img class="icon-alert" src="./assets/icons/alert-success.svg">
+                <div class="d-flex justify-content-end mt-2 me-2">
+                    <img class="icon-close" src="./assets/icons/icon_close.png" data-dismiss="modal" aria-label="Close">
+                </div>
+                <div class="modal-body mt-3 mb-3">
+                    <div class="container mt-5">
+                        <div class="text-center">
+                            <h5 class="text-title"><b>Hemos confirmado tus datos</b></h5>
+                            <span class="card-description">Una vez tu inquilino complete su parte del proceso enviaremos
+                                a tu correo electrónico toda la información necesaria para finalizar la compra de tu
+                                póliza.
+
+                            </span>
+                        </div>
+
+                        <div class="information">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, soluta voluptate.
+                                Temporibus enim repellat alias officiis laboriosam cumque laborum quis quos molestias,
+                                magni suscipit amet expedita error at soluta consequuntur aliquam tempora doloribus
+                                placeat nam deleniti sed earum, adipisci illo! Quisquam praesentium nulla eius
+                                perspiciatis maiores reiciendis provident ipsam libero, odit in repellendus sequi sit et
+                                nesciunt! Dolores laboriosam id magni voluptatem facere corporis! Laborum suscipit, cum
+                                et provident obcaecati harum nulla minus error corporis tempora reprehenderit numquam
+                                excepturi inventore, omnis dolore, beatae hic voluptatum! Aut quibusdam architecto vitae
+                                autem pariatur tempora, aperiam nulla! Accusantium, mollitia. Molestias vero quasi rem!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Boton Aceptar -->
+                    <div class="d-flex justify-content-center">
+                        <a href="./pasarela_pagos.html" class="btn button-success medium-button">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Datos confirmados-->
 
 
     <!-- Scripts -->
@@ -405,9 +452,9 @@
     <script>
         const btn_continue = document.querySelector("#btn_continue");
 
-        btn_continue.addEventListener("click", () => {
-            window.location.href = "./preguntas_seguirdad.html";
-        });
+        // btn_continue.addEventListener("click", () => {
+        //     window.location.href = "./preguntas_seguirdad.html";
+        // });
 
 
         //Validación formulario
