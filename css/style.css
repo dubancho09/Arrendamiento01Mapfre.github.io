@@ -106,7 +106,7 @@ a{
 
 .initial-form{
     position: absolute;
-    top: 120px;
+    top: 100px;
     width: 500px;
     min-height: 650px;
     background-color: white;
@@ -187,7 +187,12 @@ a{
 
 /*Estilos para inputs y selects*/
 
-.form-group textarea {
+.col-md-4 .form-group .form-floating .form-control:disabled {
+    text-align: start !important;
+    padding-left: 0px !important;
+}
+
+.form-group #textarea {
     border: 1px solid #D81E04 !important;
 }
 
@@ -240,6 +245,8 @@ a{
     padding-left: 0px;
     padding-bottom: 0px;
 }
+
+
 
 .form-floating label{
     padding-left: 0px;
@@ -368,7 +375,7 @@ a{
 
 /*Estilos pagina calculadora*/
 
-.calculator-total{
+#calculator-total{
     display: flex;
     justify-content: center !important;
     background-color: white !important;

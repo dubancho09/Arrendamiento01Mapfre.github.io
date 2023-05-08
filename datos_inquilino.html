@@ -193,8 +193,7 @@
 
                 <!-- Boton Continuar -->
                 <div class="d-flex justify-content-center mb-5">
-                    <button id="btn-modal" class="btn button-success medium-button" data-toggle="modal"
-                        data-target="#informacion_exitosa" disabled>Continuar</button>
+                    <button id="btn-modal" class="btn button-success medium-button" disabled>Continuar</button>
                 </div>
 
             </div>
@@ -307,6 +306,10 @@
 
             return valid;
         }
+
+        btn_continue.addEventListener('click', () =>{
+            window.location.href = "./datos_propiedad.html";
+        });
     </script>
 
 </body>

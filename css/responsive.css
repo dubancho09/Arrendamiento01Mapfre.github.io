@@ -9,7 +9,6 @@
     .initial-form{
         width: 94%;  
         top: 350px; 
-        /* display: none; */
     }
     
     #nav-mobile{
@@ -36,8 +35,9 @@
 
 
     .description-poliza{
-        margin-top: 720px !important;
-        
+        margin-top: 950px !important;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .description-poliza h4{
