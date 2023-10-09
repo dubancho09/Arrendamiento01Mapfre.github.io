@@ -96,82 +96,52 @@
             <!-- Inicio formulario datos iniciales -->
             <form autocomplete="off" id="initial-form">
               <div class="row mt-3">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-group">
                     <div class="form-floating">
-                      <!-- Zona -->
-                      <select id="type_document" class="form-select">
-                        <option value="0">--selecciona--</option>
-                        <option value="1">Lorem</option>
-                        <option value="2">Lorem</option>
-                      </select>
-                      <label class="pt-2">Zona</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <div class="form-floating">
-                      <!-- Estrato -->
-                      <select id="type_document" class="form-select">
-                        <option value="0">--selecciona--</option>
-                        <option value="1">Lorem</option>
-                        <option value="2">Lorem</option>
-                      </select>
-                      <label class="pt-2">Estrato</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                  <div class="form-group">
-                    <div class="form-floating">
-                      <!-- Ubicacion propiedad -->
-                      <select class="form-select" id="location_property" type="text">
-                        <option value="0">--selecciona--</option>
-                        <option value="1">Ejemplo aqui</option>
-                        <option value="2">Ejemplo aqui</option>
-                      </select>
-                      <label class="pt-2">¿Dónde está ubicada la propiedad?</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                  <div class="form-group">
-                    <div class="form-floating">
-                      <!-- Tipo inmueble -->
-                      <select class="form-select" id="type_property" type="text">
-                        <option value="">--selecciona--</option>
-                        <option value="1">Ejemplo aqui</option>
-                        <option value="2">Ejemplo aqui</option>
-                      </select>
-                      <label class="pt-2">Tipo de inmueble a asegurar</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                  <div class="form-group">
-                    <div class="form-floating">
-                      <!-- Tipo documento -->
-                      <select class="form-select" id="type_property" type="text">
-                        <option value="">--selecciona--</option>
-                        <option value="1">Ejemplo aqui</option>
-                        <option value="2">Ejemplo aqui</option>
-                      </select>
-                      <label class="pt-2">Tipo de documento</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                  <div class="form-group">
-                    <div class="form-floating">
-                      <!-- Nro documento -->
-                      <input type="number"
+                      <!-- Nombre -->
+                      <input type="text"
                              class="form-control"
                              placeholder="Valor mensual del arriendo">
-                      <label class="form-label" for="floatingInput">Número de documento</label>
+                      <label class="form-label" for="floatingInput">Nombre</label>
                     </div>
                   </div>
                 </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-floating">
+                      <!-- Número de teléfono -->
+                      <input type="text"
+                             class="form-control"
+                             placeholder="Valor mensual del arriendo">
+                      <label class="form-label" for="floatingInput">Número de teléfono</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-floating">
+                      <!-- Primer Apellido -->
+                      <input type="text"
+                             class="form-control"
+                             placeholder="Valor mensual del arriendo">
+                      <label class="form-label" for="floatingInput">Primer Apellido</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="form-floating">
+                      <!-- Correo -->
+                      <input type="text"
+                             class="form-control"
+                             placeholder="Valor mensual del arriendo">
+                      <label class="form-label" for="floatingInput">Correo</label>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="col-md-12 mt-4">
                   <div class="form-group">
                     <!-- Terminos y condiciones -->
@@ -199,8 +169,9 @@
                     </p>
                   </div>
                 </div>
+                
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-4">
                   <button type="button" id="btn_continue" class="btn button-form-initial button-success"
                     data-toggle="modal" data-target="#cod_asesor" disabled>
                     Continuar
@@ -215,7 +186,7 @@
             <!-- Fin formulario datos iniciales -->
           </div>
         </div>
-        <div class="col-md-6 mt-3 description-poliza">
+        <div class="col-md-6  description-poliza">
           <h4 class="text-title">
             <b>¿Sabes qué es una póliza de arrendamiento?</b>
           </h4>
@@ -743,7 +714,7 @@
   <!-- Modal Asistencia Exito-->
   <div class="modal fade" id="asistencia_exito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered " role="document">
       <div class="modal-content">
         <img class="icon-alert" src="./assets/icons/alert-success.svg" />
         <div class="d-flex justify-content-end mt-2 me-2">
@@ -792,7 +763,7 @@
   <!-- modal cod asesor-->
   <div class="modal fade" id="cod_asesor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered proceso_abieto" role="document">
       <div class="modal-content">
         <img class="icon-alert" src="./assets/icons/modal-icon-warning.svg" />
         <div class="d-flex justify-content-end mt-2 me-2">
@@ -801,23 +772,96 @@
         <div class="modal-body mt-3">
           <div class="container mt-5">
             <div class="text-center">
-              <h5 class="text-title"><b>¿Recibiste asesoría?</b></h5>
-              <span class="card-description">Queremos saber si tuviste acompañamiento de alguno de
-                nuestros asesores, si es así por favor digita el nombre o el
-                código en el siguiente campo:</span>
+              <h5 class="text-title"><b>Datos iniciales</b></h5>
+              <span class="card-description">Lorem ipsum dolor</span>
             </div>
-            <div class="asesor-options d-flex justify-content-between mt-5 mb-3">
-              <button id="btn1" class="btn medium-button button-secondary">
-                Si
-              </button>
-              <div class="mx-2"></div>
-              <button id="btn2" class="btn medium-button button-primary">
-                No
-              </button>
+
+            <form autocomplete="off" class="row mt-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Zona -->
+                    <select id="type_document" class="form-select">
+                      <option value="0">--selecciona--</option>
+                      <option value="1">Lorem</option>
+                      <option value="2">Lorem</option>
+                    </select>
+                    <label class="pt-2">Zona</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Estrato -->
+                    <select id="type_document" class="form-select">
+                      <option value="0">--selecciona--</option>
+                      <option value="1">Lorem</option>
+                      <option value="2">Lorem</option>
+                    </select>
+                    <label class="pt-2">Estrato</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Ubicacion propiedad -->
+                    <select class="form-select" id="location_property" type="text">
+                      <option value="0">--selecciona--</option>
+                      <option value="1">Ejemplo aqui</option>
+                      <option value="2">Ejemplo aqui</option>
+                    </select>
+                    <label class="pt-2">¿Dónde está ubicada la propiedad?</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Tipo inmueble -->
+                    <select class="form-select" id="type_property" type="text">
+                      <option value="">--selecciona--</option>
+                      <option value="1">Ejemplo aqui</option>
+                      <option value="2">Ejemplo aqui</option>
+                    </select>
+                    <label class="pt-2">Tipo de inmueble a asegurar</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Tipo documento -->
+                    <select class="form-select" id="type_property" type="text">
+                      <option value="">--selecciona--</option>
+                      <option value="1">Ejemplo aqui</option>
+                      <option value="2">Ejemplo aqui</option>
+                    </select>
+                    <label class="pt-2">Tipo de documento</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4">
+                <div class="form-group">
+                  <div class="form-floating">
+                    <!-- Nro documento -->
+                    <input type="number"
+                           class="form-control"
+                           placeholder="Valor mensual del arriendo">
+                    <label class="form-label" for="floatingInput">Número de documento</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="mt-3">
+              <input class="form-check-input"  id="asesoria-check" type="checkbox">
+              <label for="asesoria-check">Recibí asesoría</label>
             </div>
             <form autocomplete="off">
               <!-- Input Código o nombre de asesor -->
-              <div id="form_asesor" class="form-group mt-3">
+              <div id="form_asesor" class="form-group">
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" placeholder="Código o nombre de asesor" />
                   <label class="form-label" for="floatingInput">Código o nombre de asesor</label>
@@ -907,19 +951,20 @@
 
     //Cambiar el color de los botones
 
-    const btn_yes = document.querySelector("#btn1");
-    const btn_no = document.querySelector("#btn2");
+   
     const form_asesor = document.querySelector("#form_asesor");
+    const asesoria_check = document.querySelector('#asesoria-check');
 
-    btn_yes.addEventListener("click", () => {
-      change_color(btn_yes, btn_no);
-      form_asesor.style.display = "block";
+
+    asesoria_check.addEventListener('change' , () => {
+      if( asesoria_check.checked == true ){
+        form_asesor.style.display = "block";
+      }else{
+        form_asesor.style.display = "none";
+      }
     });
 
-    btn_no.addEventListener("click", () => {
-      change_color(btn_yes, btn_no);
-      form_asesor.style.display = "none";
-    });
+   
 
     const change_color = (btn_1, btn_2) => {
       if (btn_1.classList.contains("button-primary")) {
